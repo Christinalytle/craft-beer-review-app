@@ -1,0 +1,22 @@
+minimum_cumulusci_version: '3.86.0'
+project:
+    name: craft-beer-review-app
+    package:
+        name: craft-beer-review-app
+        api_version: '60.0'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/craft-beer-review-app/tests
+            options:
+                outputdir: robot/craft-beer-review-app/results
+
+    robot_testdoc:
+        options:
+            path: robot/craft-beer-review-app/tests
+            output: robot/craft-beer-review-app/doc/craft-beer-review-app_tests.html
+

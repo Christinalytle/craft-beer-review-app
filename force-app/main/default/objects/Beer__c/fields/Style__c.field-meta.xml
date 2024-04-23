@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Style__c</fullName>
+    <externalId>false</externalId>
+    <label>Style</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Barley Wine</fullName>
+                <default>false</default>
+                <label>Barley Wine</label>
+            </value>
+            <value>
+                <fullName>Barrel-Aged</fullName>
+                <default>false</default>
+                <label>Barrel-Aged</label>
+            </value>
+            <value>
+                <fullName>Berliner Weisse</fullName>
+                <default>false</default>
+                <label>Berliner Weisse</label>
+            </value>
+            <value>
+                <fullName>Blonde Ale</fullName>
+                <default>false</default>
+                <label>Blonde Ale</label>
+            </value>
+            <value>
+                <fullName>Double IPA</fullName>
+                <default>false</default>
+                <label>Double IPA</label>
+            </value>
+            <value>
+                <fullName>Hefeweizen</fullName>
+                <default>false</default>
+                <label>Hefeweizen</label>
+            </value>
+            <value>
+                <fullName>IPA</fullName>
+                <default>false</default>
+                <label>IPA</label>
+            </value>
+            <value>
+                <fullName>Kolsch</fullName>
+                <default>false</default>
+                <label>Kolsch</label>
+            </value>
+            <value>
+                <fullName>Lager</fullName>
+                <default>false</default>
+                <label>Lager</label>
+            </value>
+            <value>
+                <fullName>Lambic</fullName>
+                <default>false</default>
+                <label>Lambic</label>
+            </value>
+            <value>
+                <fullName>Pale Ale</fullName>
+                <default>false</default>
+                <label>Pale Ale</label>
+            </value>
+            <value>
+                <fullName>Pilsener</fullName>
+                <default>false</default>
+                <label>Pilsener</label>
+            </value>
+            <value>
+                <fullName>Saison</fullName>
+                <default>false</default>
+                <label>Saison</label>
+            </value>
+            <value>
+                <fullName>Session IPA</fullName>
+                <default>false</default>
+                <label>Session IPA</label>
+            </value>
+            <value>
+                <fullName>Sour</fullName>
+                <default>false</default>
+                <label>Sour</label>
+            </value>
+            <value>
+                <fullName>Stout</fullName>
+                <default>false</default>
+                <label>Stout</label>
+            </value>
+            <value>
+                <fullName>Triple IPA</fullName>
+                <default>false</default>
+                <label>Triple IPA</label>
+            </value>
+            <value>
+                <fullName>Wheat</fullName>
+                <default>false</default>
+                <label>Wheat</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
