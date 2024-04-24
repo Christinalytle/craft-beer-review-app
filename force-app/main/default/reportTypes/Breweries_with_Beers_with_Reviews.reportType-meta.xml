@@ -274,6 +274,11 @@
             <field>OperatingHours</field>
             <table>Account</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Number_of_Beers__c</field>
+            <table>Account</table>
+        </columns>
         <masterLabel>Breweries</masterLabel>
     </sections>
     <sections>
@@ -327,6 +332,21 @@
             <field>Style__c</field>
             <table>Account.Beers__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_Ratings__c</field>
+            <table>Account.Beers__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Number_of_Reviews__c</field>
+            <table>Account.Beers__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Average_Rating__c</field>
+            <table>Account.Beers__r</table>
+        </columns>
         <masterLabel>Beers</masterLabel>
     </sections>
     <sections>
@@ -368,6 +388,16 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Reviewer__c</field>
+            <table>Account.Beers__r.Reviews__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Rating__c</field>
+            <table>Account.Beers__r.Reviews__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Review__c</field>
             <table>Account.Beers__r.Reviews__r</table>
         </columns>
         <masterLabel>Reviews</masterLabel>
