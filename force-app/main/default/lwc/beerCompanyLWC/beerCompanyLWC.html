@@ -1,3 +1,22 @@
 <template>
-    
+    <lightning-card title="beerCompanyLWC">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+                <lightning-input label="City" type="text" value={city} onchange={handleInputChange}></lightning-input>
+            </div>
+            <div class="slds-col">
+                <lightning-button label="Search" onclick={handleSearch}></lightning-button>
+            </div>
+        </div>
+        <template if:true={error}>
+            <div class="slds-text-color_error">{error}</div>
+        </template>
+        <template if:true={breweries}>
+            <ul class="slds-list_vertical slds-p-top_medium">
+                <template for:each={breweries} for:item="brewery">
+                    <li key={brewery.id}>{brewery.name}</li>
+                </template>
+            </ul>
+        </template>
+    </lightning-card>
 </template>
