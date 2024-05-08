@@ -27,7 +27,10 @@ export default class BeerCompanyLWC extends LightningElement {
 
     handleInputChange(event) {
         this.city = event.target.value;
+        consolelog('this city', this.city); 
     }
+
+   
 
     handleSearch() {
         if (!this.city.trim()) {
@@ -37,7 +40,7 @@ export default class BeerCompanyLWC extends LightningElement {
 
         this.error = '';
 
-        fetch(`https://api.openbrewerydb.org/v1/breweries?by_city=${this.city}`)
+        fetch(`https://api.openbrewerydb.org/v1/breweries?by_city=Phoenix`, {method: 'GET'})
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -45,7 +48,7 @@ export default class BeerCompanyLWC extends LightningElement {
                 return response.json();
             })
             .then(data => {
-                this.breweries = data;
+                this.breweries = JSON.stringify(data);
             })
             .catch(error => {
                 this.error = 'Error fetching breweries: ' + error.message;
